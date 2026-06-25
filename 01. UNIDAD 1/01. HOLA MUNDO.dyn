@@ -1,0 +1,335 @@
+{
+  "Uuid": "4ff1ba22-0fc2-42d0-8c0a-3801c19182ac",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "1. HOLA MUNDO",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "e3c5be138c1e4393bf3d4428d44b827b",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "a714160c449f4143a9172df144c0d2da",
+          "Name": "centerPoint",
+          "Description": "Center point of circle\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c17dd7ea54bc4615be93ebf24c44412c",
+          "Name": "radius",
+          "Description": "Radius\n\ndouble\nDefault value : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4df0d30b470f413f866808c34c0fcceb",
+          "Name": "Circle",
+          "Description": "Circle created with center point and radius",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double",
+      "Replication": "Auto",
+      "Description": "Creates a Circle with input center Point and radius in the world XY plane, with world Z as normal.\n\nCircle.ByCenterPointRadius (centerPoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), radius: double = 1): Circle"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NumberType": "Double",
+      "MaximumValue": 10.0,
+      "MinimumValue": 1.0,
+      "StepValue": 1.0,
+      "Id": "5c0968027b844eb8aaab09c4b37ca9ce",
+      "NodeType": "NumberInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "79860218619e43b5940c30ad7160c38c",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Produces numeric values",
+      "InputValue": 3.0
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "Id": "39c3983bacc44f0da86ade1cae6e2390",
+      "NodeType": "FunctionNode",
+      "Inputs": [
+        {
+          "Id": "ae4288779b8a4013bd123f1ba370012b",
+          "Name": "x",
+          "Description": "X coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3fd2ad57db444dd099676caaa172ffd4",
+          "Name": "y",
+          "Description": "Y coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ebcf02bf45ab4b2fb7f311e964dc84e6",
+          "Name": "z",
+          "Description": "Z coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "69a8f00b8787433f907d5fbb29b1afac",
+          "Name": "Point",
+          "Description": "Point created by coordinates",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Replication": "Auto",
+      "Description": "Form a Point given 3 cartesian coordinates\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
+      "NumberType": "Double",
+      "Id": "82033df1a12146bfa3f994d433fc0296",
+      "NodeType": "NumberInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a7d0f9dce68544d2a29b30c937b3014f",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a number.",
+      "InputValue": 0.0
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
+      "NumberType": "Double",
+      "Id": "5770e20f174b47f59b6b961e8e147b3c",
+      "NodeType": "NumberInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "49f47df4e84247578a9f27d13df9340c",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a number.",
+      "InputValue": 0.0
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
+      "NumberType": "Double",
+      "Id": "7b3a22adcbae4c95a8be2fe5f66230bc",
+      "NodeType": "NumberInputNode",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "236f6924b41643a6858de845621e42b9",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a number.",
+      "InputValue": 1.0
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "79860218619e43b5940c30ad7160c38c",
+      "End": "c17dd7ea54bc4615be93ebf24c44412c",
+      "Id": "1ef706079c0c486183def45185dc5c6e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "69a8f00b8787433f907d5fbb29b1afac",
+      "End": "a714160c449f4143a9172df144c0d2da",
+      "Id": "8655cdf32d664e89874da2f977f43020",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a7d0f9dce68544d2a29b30c937b3014f",
+      "End": "ae4288779b8a4013bd123f1ba370012b",
+      "Id": "6afe179f536142cbbd193b2010151dd9",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "49f47df4e84247578a9f27d13df9340c",
+      "End": "3fd2ad57db444dd099676caaa172ffd4",
+      "Id": "dfc0ee5372534016a18be578ffa3c897",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "236f6924b41643a6858de845621e42b9",
+      "End": "ebcf02bf45ab4b2fb7f311e964dc84e6",
+      "Id": "a401d53500d3490aa7e82ba1c31f794f",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "EnableLegacyPolyCurveBehavior": null,
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "3.6",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "9.1",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "3.6.2.11575",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "_Background Preview",
+      "EyeX": -24.408384323120117,
+      "EyeY": 14.463775634765625,
+      "EyeZ": 20.064048767089844,
+      "LookX": 18.444398880004883,
+      "LookY": -14.998514175415039,
+      "LookZ": -25.678165435791016,
+      "UpX": 0.1312343329191208,
+      "UpY": 0.9743700623512268,
+      "UpZ": -0.18270349502563477
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Id": "e3c5be138c1e4393bf3d4428d44b827b",
+        "Name": "Circle.ByCenterPointRadius",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 638.2090800373348,
+        "Y": 34.651574359599664
+      },
+      {
+        "Id": "5c0968027b844eb8aaab09c4b37ca9ce",
+        "Name": "VAR_RADIO",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 198.79029952701842,
+        "Y": 164.52405757316757
+      },
+      {
+        "Id": "39c3983bacc44f0da86ade1cae6e2390",
+        "Name": "Point.ByCoordinates",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": 201.68629989342242,
+        "Y": -41.858718679886124
+      },
+      {
+        "Id": "82033df1a12146bfa3f994d433fc0296",
+        "Name": "X",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -266.1273693185566,
+        "Y": -22.243819908800504
+      },
+      {
+        "Id": "5770e20f174b47f59b6b961e8e147b3c",
+        "Name": "Y",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -266.7826231903921,
+        "Y": 114.39165495956814
+      },
+      {
+        "Id": "7b3a22adcbae4c95a8be2fe5f66230bc",
+        "Name": "Z",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "ShowGeometry": true,
+        "X": -272.2196713347349,
+        "Y": 249.6032676859051
+      }
+    ],
+    "Annotations": [],
+    "X": 373.15572028223136,
+    "Y": 145.968436537044,
+    "Zoom": 0.5830130162092002
+  }
+}
