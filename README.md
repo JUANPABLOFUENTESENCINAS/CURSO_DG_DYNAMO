@@ -15,7 +15,7 @@ Este repositorio contiene todo el material didáctico, scripts descargables (`.d
 ---
 
 ## 2. Contenido del Curso
-* **UNIDAD 1:** Nodos
+* **UNIDAD 1:** Nodos y principios basicos con Dynamo
 * **UNIDAD 2:** Listas
 * **UNIDAD 3:** Curvas
 * **UNIDAD 4:** Diseño Parametrico
